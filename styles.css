@@ -1,0 +1,391 @@
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url(./assets/fonts/Oswald-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Oswald-Regular";
+    src: url(./assets/fonts/Oswald-Regular.ttf) format("truetype");
+}
+
+h2,
+p {
+    text-indent: 30px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Oswald-Regular";
+    margin: 0px 100px;
+    background: url(https://www.estidia.eu/wp-content/uploads/2018/04/Savin-NY-Website-Background-Web.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+img {
+    width: auto;
+    height: 100%;
+}
+
+.image-naglavnyu {
+    width: 45%;
+    float: right;
+    margin: 20px;
+    box-shadow: rgb(14 30 37 / 12%) 0px 2px 4px 0px, rgb(14 30 37 / 32%) 0px 2px 16px 0px;
+}
+
+.navbar-title {
+    display: flex;
+    font-family: "Oswald-Regular";
+    white-space: nowrap;
+    margin: 20px;
+}
+
+.navbar {
+    font-family: "Oswald-Regular";
+    width: auto;
+    background: #b9c1ce;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-brand {
+    margin: 10px;
+    font-size: xx-large;
+    align-self: center;
+}
+
+.navbar-buttons {
+    width: 100%;
+    padding: 10px 0px;
+    align-self: center;
+    z-index: 100;
+    background: #b9c1ce;
+}
+
+.navbar-nav {
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0;
+    display: flex;
+}
+
+.top-image {
+    justify-content: center;
+    margin: 30px;
+}
+
+.nav-item {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald-Regular";
+    font-size: large;
+}
+
+.nav-item.active a {
+    color: white !important;
+}
+
+span {
+    cursor: pointer;
+}
+
+.side-menu {
+    width: 25%;
+    height: auto;
+}
+
+.side-menu:target {
+    background-color: #b9c1ce7a;
+}
+
+.center-menu {
+    width: 75%;
+}
+
+.container {
+    display: flex;
+}
+
+.map {
+    width: 100%;
+    margin-top: -60px;
+    height: 800px;
+}
+
+.contact__item-img {
+    width: 20px;
+    margin-right: 10px;
+}
+.d-flex {
+    display: flex;
+}
+
+.contact-flex-direction {
+    flex-direction: row;
+}
+
+@media screen and (max-width: 900px) {
+    .contact-flex-direction {
+        flex-direction: column;
+    }
+}
+
+iframe {
+    border: none;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contact-container {
+    padding: 20px;
+    width: 50%;
+}
+
+.contact-us-grid--left {
+    background-color: white;
+}
+
+.map-top-hider {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+}
+
+.map-container {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.map-container li {
+    margin-bottom: 10px;
+}
+
+.map-container a {
+    display: flex;
+    align-items: center;
+}
+
+.textcols {
+	white-space: nowrap;
+}
+.textcols-item {
+	white-space: normal;	
+	display: inline-block;
+	width: 48%;
+	vertical-align: top;
+	
+}
+.textcols .textcols-item:first-child {
+	margin-right: 5%;
+}
+
+/* galerry */
+
+.cssSlider {
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 750px;
+}
+
+.cssSlider .slides {
+    overflow: hidden;
+    overflow: hidden;
+    width: 100%;
+    height: 75%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.cssSlider .slides > li {
+    width: 100%;
+    text-align: center;
+    height: 75%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.cssSlider .slides li img {
+    margin: 10px;
+    height: 90%;
+    box-shadow: rgb(14 30 37 / 12%) 0px 2px 4px 0px, rgb(14 30 37 / 32%) 0px 2px 16px 0px;
+}
+
+/*
+.cssSlider .slides > li:first-child:not(:target) {
+	z-index: 1;
+	-webkit-transform: translateY(0%);
+	        transform: translateY(0%);
+}
+*/
+
+.cssSlider .thumbnails {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.cssSlider .thumbnails > li {
+    float: left;
+    width: 20%;
+}
+
+.cssSlider .thumbnails > li > a {
+    display: block;
+}
+
+.cssSlider .thumbnails > li > a > img {
+    width: 100%;
+    height: auto;
+}
+
+.cssSlider .slides li:target {
+    z-index: 3;
+    -webkit-animation: slide 1s 1;
+}
+
+.cssSlider .slides li:not(:target) {
+    visibility: hidden;
+    transition: visibility 1s, opacity 0.5s linear;
+}
+
+@-webkit-keyframes slide {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes hidden {
+    0% {
+        z-index: 2;
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    100% {
+        z-index: 2;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+@keyframes hidden {
+    0% {
+        z-index: 2;
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    100% {
+        z-index: 2;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+/* gallery */
+
+.shema1 {
+    width: auto;
+    height: 1000px;
+}
+
+
+.side-menu {
+    width: 25%;
+    padding: 0px;
+    margin: 10px;
+}
+
+.side-menu-item {
+    padding: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    list-style-type: none;
+}
+
+.menu-data:not(:target) {
+    visibility: hidden;
+    transition: visibility 1s, opacity 0.5s linear;
+    display: none;
+}
+
+.menu-data:target {
+    display: block;
+}
+
+.map-container li,
+#menu2 li {
+    list-style-type: none;
+}
+
+.side-menu-item.active {
+    background-color: #b9c1ce96;
+}
